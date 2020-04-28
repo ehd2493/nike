@@ -5,3 +5,46 @@ img{vertical-align: middle; max-width: 100%;}
 ul{list-style-type: none;}
 .cf:after,.cf:before { content: ""; display: block; clear: both;}
 
+header, section, .sns, .vid{display: block;}
+body{width: 100%; height: 100%; position: fixed; 
+    background: #111; color: #fff;}
+.vid{position: fixed; width: 100%; height: 100%; top: 0; left: 0;}
+.vid video{min-width: 100%; min-height: 100%; position: absolute; top: 50%; left: 50%;
+transform:translate(-50%,-50%);   }
+
+header{position: fixed; width: 700px; height: 100%; 
+    background: #b9fb05; transform: skew(-40deg);
+left: -420px; 
+}
+
+h1{position: absolute; top: 40px; right: 150px;
+transform: skew(40deg);}
+h1 img{width: 280px;}
+
+#gnb {position: absolute; top: 200px; right: 0px; width:220px; 
+}
+.depth1 > li {color: #222; 
+    text-align: left; font-size: 18px; 
+    font-weight: bold;
+transition:all 0.4s; position: relative;}
+
+.depth1 > li.on{background: #111; color: #fff;}
+.depth1 > li:hover{background: #111; color: #fff;}
+
+
+.depth1 > li > a {display: block; padding-left:40px ;
+    height: 50px; line-height: 50px; padding-left: 40px;}
+/*transform 속성은  block요소에만 적용됨*/
+#gnb em{transform: skew(40deg); display: block;
+font-style: normal;}
+
+.depth2{position: absolute; left: 0; top:0; width: 150px; opacity: 0; transition: all 0.5s;}
+.depth1 >li.on .depth2{opacity: 0.8; left: 205px; top: -10px;}
+.depth1 > li:hover .depth2{opacity: 0.8; left: 205px;}
+.depth2 > li{height: 40px; line-height: 40px; background: #222; 
+border-bottom: 1px solid #b9fb05;
+font-size: 16px; color: #fff; margin-bottom: 3px; text-align: center;
+}
+.depth2 > li > a {display: block; height: 40px; line-height: 40px;}
+
+.depth2 >li:hover {background: #b9fb05 ;color: #111;} 
